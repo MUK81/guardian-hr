@@ -42,11 +42,11 @@
 					data: $form.serialize(),
 					success: function($response) {
 						$form.find('button[type=submit]').html('Get Client').removeAttr('disabled');
-
+console.log($response);
 						if(typeof($response.result) !== 'undefined' && $response.result) {
 							$result = '<div id="updateFilter" class="w-100 mb-3 text-center"><button class="btn btn-dark"><i class="fa-solid fa-rotate"></i> Change Transaction ID</button></div>';
 
-							if(!$response.data || typeof($response.data) == 'undefined' || $response.data.length <= 0 || typeof($response.data.customerInfo) !== 'undefined') {
+							if(!$response.data || typeof($response.data) == 'undefined' || $response.data.length <= 0 || typeof($response.data.customerInfo) == 'undefined') {
 								$result += '<div class="w-100 text-center">No client found.</div>';
 							} else {
 								$result += '<table class="table table-striped">';
