@@ -74,7 +74,7 @@ class PageController extends BaseWebsiteController {
 
 				return ['result' => true, 'data' => $response];
 			} else {
-				return ['result' => false, 'message' => ['Login error.']];
+				return ['result' => false, 'message' => [['Login error.']]];
 			}
 		}
 
@@ -109,7 +109,7 @@ class PageController extends BaseWebsiteController {
 
 				return ['result' => true, 'data' => $response];
 			} else {
-				return ['result' => false, 'message' => ['Login error.']];
+				return ['result' => false, 'message' => [['Login error.']]];
 			}
 		}
 
@@ -144,7 +144,7 @@ class PageController extends BaseWebsiteController {
 
 				return ['result' => true, 'data' => $response];
 			} else {
-				return ['result' => false, 'message' => ['Login error.']];
+				return ['result' => false, 'message' => [['Login error.']]];
 			}
 		}
 
