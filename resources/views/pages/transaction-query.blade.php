@@ -12,7 +12,7 @@
 					<input type="hidden" name="url" value="" />
 					<div class="form-group">
 						<label>From Date</label>
-						<input id="fromDate" type="text" name="fromDate" class="form-control" value="{{ old('fromDate') }}" placeholder="DD/MM/YYYY" autocomplete="off" />
+						<input id="fromDate" type="text" name="fromDate" class="form-control" value="{{ (old('fromDate') ? old('fromDate') : '01/01/2015') }}" placeholder="DD/MM/YYYY" autocomplete="off" />
 					</div>
 					<div class="form-group">
 						<label>To Date</label>
