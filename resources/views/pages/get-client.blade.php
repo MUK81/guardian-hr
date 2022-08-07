@@ -42,7 +42,6 @@
 					data: $form.serialize(),
 					success: function($response) {
 						$form.find('button[type=submit]').html('Get Client').removeAttr('disabled');
-						console.log($response);
 
 						if(typeof($response.result) !== 'undefined' && $response.result) {
 							$result = '<div id="updateFilter" class="w-100 mb-3 text-center"><button class="btn btn-dark"><i class="fa-solid fa-rotate"></i> Change Transaction ID</button></div>';
