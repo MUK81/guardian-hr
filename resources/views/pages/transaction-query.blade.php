@@ -3,6 +3,9 @@
 @section('content')
 	<div class="container">
 		<div class="row justify-content-center">
+			<div class="col-12 mb-3">
+				<div class="alert alert-danger" style="display: none;"></div>
+			</div>
 			<div class="col-12 col-md-5 mb-5 filter-col">
 				<form id="transactionQueryForm" method="post">
 					@csrf
